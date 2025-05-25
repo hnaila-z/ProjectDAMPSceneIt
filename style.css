@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('home.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.auth-container {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); /* overlay */
+}
+
+.auth-card {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  margin-bottom: 2rem;
+}
+
+/* Remove "Scenelt" text near logo */
+.logo h3 {
+  font-size: 0;
+}
+
+.logo h3 img {
+  font-size: initial;
+  vertical-align: middle;
+}
+
+/* Sign In left panel */
+.sign-in-left {
+  background: url('Rectangle 15.png') no-repeat center center;
+  background-size: cover;
+  background-color: #dc3545;
+  background-blend-mode: multiply;
+  color: white;
+  padding: 2rem;
+}
+
+/* Sign Up right panel */
+.sign-up-right {
+  background: url('Rectangle 14.png') no-repeat center center;
+  background-size: cover;
+  background-color: #dc3545;
+  background-blend-mode: multiply;
+  color: white;
+  padding: 2rem;
+}
+
+/* Sign Up left panel background abu-abu */
+#sign-up .col-md-6.bg-light {
+  background-color: #ccc !important;
+  color: #000 !important;
+  padding: 2rem;
+  border-radius: 0 0 0 20px;
+}
+
+/* Inputs style */
+input.form-control {
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+}
+
+/* Buttons on red background */
+.sign-in-left .btn,
+.sign-up-right .btn {
+  background-color: white;
+  color: #dc3545;
+  border: none;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-in-left .btn:hover,
+.sign-up-right .btn:hover {
+  background-color: #b02a37;
+  color: white;
+}
+
+/* Buttons on grey background */
+#sign-up .col-md-6.bg-light .btn-dark {
+  background-color: #333;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  width: 100%;
+}
+
+#sign-up .col-md-6.bg-light .btn-dark:hover {
+  background-color: #000;
+}
+
+/* Back buttons */
+.btn-outline-light, .btn-outline-dark {
+  width: 100%;
+  font-weight: 600;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
