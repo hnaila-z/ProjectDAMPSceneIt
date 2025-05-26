@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up - SceneIt</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(to top right, #000000, #2c2c2c);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      gap: 40px;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 150px;
+    }
+
+    .cards-wrapper {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      width: 450px;
+      height: 500px;
+      border-radius: 10px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      position: relative;
+    }
+
+    .card.left {
+      background: linear-gradient(to bottom right, #c0c0c0, #595959);
+      color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card.left h2 {
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .card.left input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .card.left button {
+      padding: 10px 20px;
+      border: none;
+      background: black;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .card.right {
+      background-color: #ff0000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .card.right h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .card.right h3 {
+      font-size: 16px;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+
+    .card.right button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: white;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="20250520_0943_Logo on Black_remix_01jvns5mc9eqzaakmk53fra2g8 1.png" alt="SceneIt logo">
+  </div>
+  <div class="cards-wrapper">
+    <div class="card right">
+      <h2>NEW HERE?</h2>
+      <h3>Create an account to get started!</h3>
+      <button onclick="window.location.href='signup.html'">SIGN UP</button>
+    </div>
+    <div class="card left">
+      <h2>SIGN IN</h2>
+      <input type="email" placeholder="E-mail" />
+      <input type="password" placeholder="Password" />
+      <button>SIGN IN</button>
+    </div>
+  </div>
+</body>
+</html>
