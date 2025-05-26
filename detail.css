@@ -120,5 +120,81 @@ nav a {
   color: #ccc;
   font-size: 0.85rem;
 }
+.hidden {
+  display: none;
+}
 
+.review-actions {
+  margin-top: 10px;
+}
 
+.reply-box,
+.report-modal {
+  background-color: #f9f9f9;
+  color: #222 !important;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.reply-box *,
+.report-modal * {
+  color: #222 !important;
+}
+
+.reply-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.reply-input input {
+  flex: 1;
+  background-color: #fff;
+  color: #000;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+.reply-input button {
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.report-modal label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.report-modal input[type="radio"] {
+  accent-color: #444;
+  margin-right: 10px;
+  transform: scale(1.1);
+}
+
+.report-modal button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.report-modal button:hover {
+  background-color: #222;
+}

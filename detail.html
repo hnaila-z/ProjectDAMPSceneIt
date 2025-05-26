@@ -13,13 +13,18 @@
         <img src="images/20250520_0943_Logo on Black_remix_01jvns5mc9eqzaakmk53fra2g8 1 edit.png" alt="Logo" class="logo-img"/>
     </div>
     <nav>
-      <a href="#">Home</a>
+      <a href="home_index.html">Home</a>
       <a href="#">Community</a>
     </nav>
     <div class="user-icon">
-      Hello, User! <i class="ti ti-user-circle"></i>
+      Hello, User!  <i class="ti ti-user-circle"></i>
     </div>
   </header>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search...">
+    <i class="ti ti-search"></i>
+  </div>
 
   <main class="detail-container">
     <div class="poster">
@@ -47,13 +52,66 @@
         <h3>User 1</h3>
         <p>⭐⭐⭐⭐⭐</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-        <span>Reply ➤</span>
+        <div class="review-actions">
+          <span class="reply-btn" style="cursor: pointer; color: white;">Reply</span>
+          <span class="report-btn" style="cursor: pointer; color: white; margin-left: 10px;">➤</span>
+        </div>
+          <!-- Reply Box -->
+          <div class="reply-box hidden">
+          <div class="replies">
+            <p><strong>User 2:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eveniet aliquid iure aut, alias, recusandae deleniti earum atque voluptates itaque esse consectetur? Atque, magni beatae expedita in animi sint quo.</p>
+            <p><strong>User 3:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore ipsum illum corrupti labore velit quaerat omnis eum quo? Voluptates reprehenderit aliquid odio reiciendis, possimus eligendi accusantium esse obcaecati quis!</p>
+          </div>
+          <div class="reply-input">
+            <input type="text" placeholder="Type something..." />
+            <button class="send-reply">➤</button>
+          </div>
+        </div>
+
+        <!-- Report Modal -->
+        <div class="report-modal hidden">
+          <form>
+            <label><input type="radio" name="reason" /> Sexual, violence, hate and harassment</label><br>
+            <label><input type="radio" name="reason" /> Misinformation</label><br>
+            <label><input type="radio" name="reason" /> Frauds and scams</label><br>
+            <label><input type="radio" name="reason" /> Sharing personal information</label><br>
+            <label><input type="radio" name="reason" /> Spam</label><br>
+            <label><input type="radio" name="reason" /> Others</label><br>
+            <button type="submit" class="report-submit">Report</button>
+          </form>
+        </div>
       </div>
       <div class="review">
         <h3>User 2</h3>
         <p>⭐⭐⭐⭐⭐</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-        <span>Reply ➤</span>
+        <div class="review-actions">
+          <span class="reply-btn" style="cursor: pointer; color: white;">Reply</span>
+          <span class="report-btn" style="cursor: pointer; color: white; margin-left: 10px;">➤</span>
+        </div>
+        <!-- Reply Box -->
+          <div class="reply-box hidden">
+          <div class="replies">
+            <p><strong>User 2:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eveniet aliquid iure aut, alias, recusandae deleniti earum atque voluptates itaque esse consectetur? Atque, magni beatae expedita in animi sint quo.</p>
+            <p><strong>User 3:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore ipsum illum corrupti labore velit quaerat omnis eum quo? Voluptates reprehenderit aliquid odio reiciendis, possimus eligendi accusantium esse obcaecati quis!</p>
+          </div>
+          <div class="reply-input">
+            <input type="text" placeholder="Type something..." />
+            <button class="send-reply">➤</button>
+          </div>
+        </div>
+        <!-- Report Modal -->
+        <div class="report-modal hidden">
+          <form> 
+            <label><input type="radio" name="reason" /> Sexual, violence, hate and harassment</label><br>
+            <label><input type="radio" name="reason" /> Misinformation</label><br>
+            <label><input type="radio" name="reason" /> Frauds and scams</label><br>
+            <label><input type="radio" name="reason" /> Sharing personal information</label><br>
+            <label><input type="radio" name="reason" /> Spam</label><br>
+            <label><input type="radio" name="reason" /> Others</label><br>
+            <button type="submit" class="report-submit">Report</button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
